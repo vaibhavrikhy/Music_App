@@ -1,4 +1,4 @@
-🎵 Music Backend API (FastAPI + MongoDB + Docker)
+##🎵 Music Backend API (FastAPI + MongoDB + Docker)##
 
 A scalable backend service for managing music data including users, tracks, and playlists. Built using FastAPI, MongoDB (NoSQL), and Docker, with JWT-based authentication and full CRUD support.
 
