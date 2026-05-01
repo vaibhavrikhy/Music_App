@@ -1,78 +1,82 @@
-🎵 Music Backend API
+# 🎵 Music Backend API
 
-Backend service for managing users, tracks, and playlists with authentication and full CRUD functionality. Built using FastAPI, MongoDB, and Docker.
+Backend service for managing users, tracks, and playlists with authentication and full CRUD functionality. Built using **FastAPI**, **MongoDB**, and **Docker**.
 
-🚀 Overview
+---
 
-This project demonstrates a production-style backend system with:
+## 🚀 Overview
 
-RESTful API design
-JWT-based authentication
-NoSQL data modeling with MongoDB
-Containerized services using Docker
-⚙️ Tech Stack
-Backend: FastAPI (Python)
-Database: MongoDB (Beanie ODM, Motor)
-Authentication: JWT + bcrypt
-Infrastructure: Docker, Docker Compose
-Docs: Swagger UI
-📂 Structure
+- RESTful API design  
+- JWT-based authentication  
+- NoSQL data modeling with MongoDB  
+- Containerized services using Docker  
+
+---
+
+## ⚙️ Tech Stack
+
+- **Backend:** FastAPI (Python)
+- **Database:** MongoDB (Beanie ODM, Motor)
+- **Authentication:** JWT + bcrypt
+- **Infrastructure:** Docker, Docker Compose
+- **Docs:** Swagger UI
+
+---
+
+## 📂 Project Structure
+
+```bash
 app/
 ├── core/        # Configuration
 ├── models/      # Database models
 ├── routers/     # API routes
 ├── schemas/     # Request/response schemas
 └── main.py      # Entry point
-🛠 Running Locally
-# 1. Clone repo
+```
+
+---
+
+## 🛠 Running Locally
+
+```bash
+# Clone repo
 git clone https://github.com/your-username/music-backend.git
 cd music-backend
 
-# 2. Setup environment
+# Setup environment
 python3 -m venv .venv
 source .venv/bin/activate
 
-# 3. Install dependencies
+# Install dependencies
 pip install -r requirements.txt
 
-# 4. Start services
+# Start services
 docker compose up -d mongo elasticsearch
 
-# 5. Run server
+# Run server
 uvicorn app.main:app --reload
-📖 API Docs
+```
 
-Available at:
+---
 
+## 📖 API Docs
+
+Open:
+```
 http://127.0.0.1:8000/docs
-🔑 Core Endpoints
-Method	Endpoint	Description
-POST	/auth/signup	Create user
-POST	/auth/login	Authenticate user
-GET	/tracks	List tracks
-POST	/tracks	Create track
-GET	/tracks/{id}	Get track
-DELETE	/tracks/{id}	Delete track
-GET	/playlists	List playlists
-POST	/playlists	Create playlist
-📸 Demo
-API Overview
+```
 
-Authentication
+---
 
-Track CRUD
+## 🔐 Security
 
-🔐 Security
-Passwords hashed using bcrypt
-Authentication via JWT tokens
-Sensitive configs stored in .env
-📌 Future Work
-Update (PUT/PATCH) endpoints
-Search integration with Elasticsearch
-Pagination & filtering
-Role-based access control
-Test coverage
-👨‍💻 Author
+- Passwords hashed using bcrypt  
+- JWT-based authentication  
+- Secrets stored in `.env`  
 
-Vaibhav Rikhy
-Backend / Full Stack Engineer
+---
+
+## 👨‍💻 Author
+
+**Vaibhav Rikhy**  
+[LinkedIn](https://linkedin.com/in/your-profile)
