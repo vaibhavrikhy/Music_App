@@ -1,119 +1,79 @@
-🎵 Music Backend API (FastAPI + MongoDB + Docker)
+🎵 Music Backend API
 
-A scalable backend service for managing music data including users, tracks, and playlists. Built using FastAPI, MongoDB (NoSQL), and Docker, with JWT-based authentication and full CRUD support.
+Backend service for managing users, tracks, and playlists with authentication and full CRUD functionality. Built using FastAPI, MongoDB, and Docker.
 
-🚀 Features
+🚀 Overview
 
-🔐 User Authentication (Signup & Login with JWT)
+This project demonstrates a production-style backend system with:
 
-🎧 Track Management (Create, Read, Delete)
-
-📁 Playlist Management
-
-⚡ FastAPI with async support
-
-🗄 MongoDB (NoSQL) using Beanie ODM
-
-🐳 Dockerized services (MongoDB + Elasticsearch)
-
-📄 Interactive API docs with Swagger UI
-
-🛠 Tech Stack
-
+RESTful API design
+JWT-based authentication
+NoSQL data modeling with MongoDB
+Containerized services using Docker
+⚙️ Tech Stack
 Backend: FastAPI (Python)
-
 Database: MongoDB (Beanie ODM, Motor)
-
-Search (optional): Elasticsearch
-
-Auth: JWT + bcrypt (passlib)
-
-Containerization: Docker & Docker Compose
-
-📂 Project Structure
-Musicapp/
-├──app/
-│   ├── core/        # Config & settings
-│   ├── models/      # MongoDB models (User, Track, Playlist)
-│   ├── routers/     # API routes (auth, tracks, playlists)
-│   ├── schemas/     # Request/response schemas (optional)
-│   ├── main.py      # FastAPI entry point
-│   └── __init__.py
-├── docker-compose.yml
-├── .env
-├── .gitignore
-└── README.md
-⚙️ Setup & Run Locally
-1️⃣ Clone the repository
+Authentication: JWT + bcrypt
+Infrastructure: Docker, Docker Compose
+Docs: Swagger UI
+📂 Structure
+app/
+├── core/        # Configuration
+├── models/      # Database models
+├── routers/     # API routes
+├── schemas/     # Request/response schemas
+└── main.py      # Entry point
+🛠 Running Locally
+# 1. Clone repo
 git clone https://github.com/your-username/music-backend.git
 cd music-backend
-2️⃣ Create virtual environment
+
+# 2. Setup environment
 python3 -m venv .venv
 source .venv/bin/activate
-3️⃣ Install dependencies
+
+# 3. Install dependencies
 pip install -r requirements.txt
-4️⃣ Start Docker services
+
+# 4. Start services
 docker compose up -d mongo elasticsearch
-5️⃣ Run the backend server
+
+# 5. Run server
 uvicorn app.main:app --reload
-📖 API Documentation
+📖 API Docs
 
-Once running, access Swagger UI:
+Available at:
 
-👉 http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/docs
+🔑 Core Endpoints
+Method	Endpoint	Description
+POST	/auth/signup	Create user
+POST	/auth/login	Authenticate user
+GET	/tracks	List tracks
+POST	/tracks	Create track
+GET	/tracks/{id}	Get track
+DELETE	/tracks/{id}	Delete track
+GET	/playlists	List playlists
+POST	/playlists	Create playlist
+📸 Demo
+API Overview
 
-🔑 Example API Flow
-Signup
-POST /auth/signup
-Create Track
-POST /tracks/
-Get Tracks
-GET /tracks/
-Delete Track
-DELETE /tracks/{track_id}
-📸 Demo Screenshots
-Swagger Overview
-
-Authentication (Signup)
+Authentication
 
 Track CRUD
 
-
-
-
-🔐 Security Notes
-
-Passwords are hashed using bcrypt
-
-JWT tokens are used for authentication
-
-Environment variables are stored in .env (not committed)
-
-🧠 Key Learnings
-
-Building RESTful APIs using FastAPI
-
-Working with NoSQL databases (MongoDB)
-
-Structuring scalable backend architecture
-
-Implementing authentication and security
-
-Dockerizing backend services
-
-📌 Future Improvements
-
-Add PUT/UPDATE endpoints
-
-Integrate Elasticsearch search endpoints
-
-Add role-based authentication
-
-Pagination & filtering for tracks
-
-Unit and integration testing
-
+🔐 Security
+Passwords hashed using bcrypt
+Authentication via JWT tokens
+Sensitive configs stored in .env
+📌 Future Work
+Update (PUT/PATCH) endpoints
+Search integration with Elasticsearch
+Pagination & filtering
+Role-based access control
+Test coverage
+👨‍💻 Author
 
 Vaibhav Rikhy
-Software Engineer | Backend & Full Stack
+Backend / Full Stack Engineer
 LinkedIn
