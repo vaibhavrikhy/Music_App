@@ -32,7 +32,7 @@ Containerization: Docker & Docker Compose
 
 📂 Project Structure
 Musicapp/
-├── app/
+├──app/
 │   ├── core/        # Config & settings
 │   ├── models/      # MongoDB models (User, Track, Playlist)
 │   ├── routers/     # API routes (auth, tracks, playlists)
