@@ -76,4 +76,3 @@ Test coverage
 
 Vaibhav Rikhy
 Backend / Full Stack Engineer
-LinkedIn
