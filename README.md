@@ -1,4 +1,4 @@
-# 🎵 Music Backend API
+# Music Backend API
 
 Backend service for managing users, tracks, and playlists with authentication and full CRUD functionality. Built using **FastAPI**, **MongoDB**, and **Docker**.
 
