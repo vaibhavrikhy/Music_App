@@ -79,4 +79,4 @@ http://127.0.0.1:8000/docs
 ## 👨‍💻 Author
 
 **Vaibhav Rikhy**  
-[LinkedIn](https://linkedin.com/in/your-profile)
+[LinkedIn](https://www.linkedin.com/in/vaibhavrikhy/)
